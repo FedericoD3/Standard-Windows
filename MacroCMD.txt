@@ -1,0 +1,8 @@
+pa     = ping 192.1.1.$1 -t -w 20
+ps     = ping 10.35.0.$1 -t -w 20
+monIP  = B:\Configs\CMDautorunMacro\monIP.bat %1
+d      = dir /ogen /p /q /a
+ls     = dir /ogen /p /q /a
+mb     = for /f "delims=\= " %C in ('net view ^| find "\\"') do @echo -Checking %C && @nbtstat -a %C | find "MSBROWSE"
+uptime = net statistics workstation | find "Stat"
+p      = B:\Utilities\Scripts\CMD\MonitorIPbeep.bat $1 
