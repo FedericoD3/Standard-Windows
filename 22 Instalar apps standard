@@ -1,0 +1,29 @@
+REM winget install --scope machine --source winget uvncbvba.UltraVnc
+REM  echo "[ultravnc]" > "C:\Program Files\uvnc bvba\UltraVNC\ultravnc.ini"
+REM  echo "passwd=8F55774CBDEC9DCFBC" >> "C:\Program Files\uvnc bvba\UltraVNC\ultravnc.ini"
+REM  echo "passwd2=8F55774CBDEC9DCFBC" >> "C:\Program Files\uvnc bvba\UltraVNC\ultravnc.ini"
+REM  echo "PortNumber=5900" >> "C:\Program Files\uvnc bvba\UltraVNC\ultravnc.ini"
+REM  "C:\Program Files\uvnc bvba\UltraVNC\winvnc.exe"
+REM  echo "Click derecho en VNC  en el tray, e 'Install service'"
+REM  pause
+
+winget install --scope machine --source winget Alex313031.Thorium.AVX2
+if %errorlevel% NEQ 0 (
+   winget install --scope machine --source winget Alex313031.Thorium
+)
+winget install --scope machine --source winget Brave.Brave
+winget install --scope machine --source winget LibreWolf.LibreWolf
+
+winget install --scope machine --source winget Rizonesoft.Notepad3
+winget install --scope machine --source winget Qalculate.Qalculate
+winget install --scope machine --source winget MyPaint.MyPaint
+
+winget install --scope machine --source winget XnSoft.XnViewMP
+winget install --scope machine --source winget ksnip.ksnip
+winget install --scope machine --source winget KDE.Okular
+winget install --scope machine --source winget SMPlayer.SMPlayer
+winget install --id=BeeBEEP.BeeBEEP -e
+
+net user Invitado /active:yes
+
+Pause
